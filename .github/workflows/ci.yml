@@ -24,7 +24,7 @@ jobs:
             docker push  ${{secrets.REGISTRY_USER}}/portfolio
 
 
-deploy:
+  deploy:
    need: build
    runs-on: ubuntu-latest
    steps:
